@@ -1,43 +1,41 @@
-#define SDL_MAIN_HANDLED
+#define GL_SILENCE_DEPRECATION 
 
 #include <iostream>
+#include <GLFW/glfw3.h>
 
-#include "src/headers/GameWindow.h"
-
-int main() 
+int main(void)
 {
-    UnderScoreGame::Engine::GameWindow gameWindow = UnderScoreGame::Engine::GameWindow();
-    
-    std::cout << "Test" << std::endl;
+    GLFWwindow* window;
+#
+    /* Initialize the library */
+    if (!glfwInit())
+        return -1;
 
-    
-    bool stillRunning = true;
-    while (stillRunning) {
-
-        SDL_Event event;
-        while (SDL_PollEvent(&event)) {
-
-            switch (event.type) {
-
-            case SDL_QUIT:
-                stillRunning = false;
-                break;
-
-            default:
-                // Do nothing.
-                break;
-            }
-
-
-            SDL_GL_SwapWindow(gameWindow.window);
-        }
-
-        SDL_Delay(10);
+    /* Create a windowed mode window and its OpenGL context */
+    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    if (!window)
+    {
+        glfwTerminate();
+        return -1;
     }
 
-    // Clean up.
-    SDL_DestroyWindow(gameWindow.window);
-    SDL_Quit();
-    
+    /* Make the window's context current */
+    glfwMakeContextCurrent(window);
+
+    /* Loop until the user closes the window */
+    while (!glfwWindowShouldClose(window))
+    {
+        /* Render here */
+        glClear(GL_COLOR_BUFFER_BIT);
+        glClearColor(0.5f, 1.f, 1.f, 1.f);
+
+        /* Swap front and back buffers */
+        glfwSwapBuffers(window);
+
+        /* Poll for and process events */
+        glfwPollEvents();
+    }
+
+    glfwTerminate();
     return 0;
 }

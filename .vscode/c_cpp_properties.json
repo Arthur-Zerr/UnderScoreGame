@@ -7,6 +7,13 @@
                 "${workspaceRoot}/thirdparty/include"
             ],
             "cppStandard": "c++20"
+        },
+        {
+            "name": "Macos",
+            "includePath": [
+                "${workspaceRoot}/thirdparty/include"
+            ],
+            "cppStandard": "c++20"
         }
     ]
 }
