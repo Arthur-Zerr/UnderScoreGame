@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\Engine",
+    "\\src\\Engine\\Core",
+    "\\src\\Engine\\Window",
+    "\\src\\Game",
+    "\\thirdparty"
+  ],
+  "SelectedNode": "\\main.cpp",
+  "PreviewInSolutionExplorer": false
+}

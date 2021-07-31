@@ -11,8 +11,6 @@
 
 # Compiled Dynamic libraries
 *.so
-*.dylib
-*.dll
 
 # Fortran module files
 *.mod
@@ -22,7 +20,6 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
@@ -48,6 +45,8 @@ include/divisible/*
 .idea/*.xml
 
 build/**/*
+out/**/*
+
 
 bin/*
 test/test_runner

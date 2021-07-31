@@ -1,17 +1,19 @@
+#include "CoreRender.hpp"
+
 #ifndef __COREWINDOW_H__
 #define __COREWINDOW_H__
 
-namespace UnderScore::Engine::Core 
+namespace UnderScore::Engine::Core
 {
-    class CoreWindow 
+    struct CoreWindow 
     {
         public:
-            virtual void Init(void);
-            virtual void Render(void);
-            virtual void Update(float detla);
-            virtual void Dispose(void);
+            virtual void SetCoreRender(CoreRender& render) = 0;
+            virtual void Init(void) = 0;
+            virtual void Render(void) = 0;
+            virtual void Update(double detla) = 0;
+            virtual void Dispose(void) = 0;
     };
 }
-
 
 #endif // __COREWINDOW_H__

@@ -20,11 +20,19 @@ endif (WIN32)
 
 if (UNIX)
   find_package(glfw3 3.3 REQUIRED)
-  find_package(OpenGL REQUIRED)
 endif (UNIX)
 
+find_package(OpenGL REQUIRED)
+
+file(GLOB_RECURSE SOURCE_FILES 
+	${CMAKE_SOURCE_DIR}/src/*.cpp)
+	
+# Add header files
+file(GLOB_RECURSE HEADER_FILES 
+	${CMAKE_SOURCE_DIR}/src/*.hpp)
+
 # add the executable
-add_executable(UnderScoreGame main.cpp )
+add_executable(UnderScoreGame main.cpp ${HEADER_FILES} ${SOURCE_FILES})
 
 
 #target_include_directories(UnderScoreGame PUBLIC "${CMAKE_CURRENT_LIST_DIR}/thirdparty/include")
@@ -42,8 +50,15 @@ if (WIN32)
 endif (WIN32)
 
 
+target_link_libraries(UnderScoreGame OpenGL::GL)
+
 # MACOS uses GLFW
 if (UNIX)
   target_link_libraries(UnderScoreGame glfw)
-  target_link_libraries(UnderScoreGame OpenGL::GL)
 endif (UNIX)
+
+
+if (WIN32)
+  target_include_directories(UnderScoreGame PUBLIC ${INCLUDE_DIR})
+  target_link_libraries(UnderScoreGame ${LIBRARY})
+endif (WIN32)
