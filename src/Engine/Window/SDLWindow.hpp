@@ -1,29 +1,27 @@
-#include "../Core/CoreWindow.hpp"
-#include "../Logger/Logger.hpp"
-
 #include <iostream>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_opengl.h>
 
-#include "../../thirdparty/include/SDL2/SDL.h"
-#include "../../thirdparty/include/SDL2/SDL_opengl.h"
+#include "../Logger/Logger.hpp"
+#include "../Core/CoreRender.hpp"
 
 #define TITLE "GameEngine"
-#define WIDTH 1920
-#define HEIGHT 1080
+#define WIDTH 1280
+#define HEIGHT 720
 
 #ifndef __SDLWINDOW_H__
 #define __SDLWINDOW_H__
 
-
 namespace UnderScore::Engine::Window 
 {
-    class SDLWindow : public UnderScore::Engine::Core::CoreWindow 
+    class SDLWindow
     {
         public:
         SDL_Window* window;
 		SDL_GLContext glContext;
-        UnderScore::Engine::Core::CoreRender render;
+        UnderScore::Engine::Core::CoreRender* render;
 
-        void SetCoreRender(UnderScore::Engine::Core::CoreRender& render) override
+        void SetCoreRender(UnderScore::Engine::Core::CoreRender* render)
         {
             this->render = render;
         }
@@ -39,7 +37,7 @@ namespace UnderScore::Engine::Window
 
             Uint32 windowFlags = SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE; //TODO load this from File
 
-            SDL_Window* window = SDL_CreateWindow(TITLE, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1920, 1080, windowFlags);
+            SDL_Window* window = SDL_CreateWindow(TITLE, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, windowFlags);
             if (window == NULL) {
                 UnderScore::Engine::Logger::Logger::GetInstance().logError("Could not create SDL window.");
                 throw; //TODO: Fix that
@@ -51,12 +49,12 @@ namespace UnderScore::Engine::Window
             glContext = SDL_GL_CreateContext(window);
         }
 
-        void Init(void) override
+        void Init(void)
         {
             UnderScore::Engine::Logger::Logger::GetInstance().logDebug("Using SDL");
             InitSDLWindow();
             UnderScore::Engine::Logger::Logger::GetInstance().logDebug("Init Renderer");
-            this->render.Init();
+            this->render->Init();
 
             Uint64 NOW = SDL_GetPerformanceCounter();
             Uint64 LAST = 0;
@@ -82,24 +80,32 @@ namespace UnderScore::Engine::Window
                             break;
                     }
                 }
-                Render();
+                glClearColor(0.f, 1.f, 0.f, 1.f);
+                glClear(GL_COLOR_BUFFER_BIT);
+
+                glBegin(GL_TRIANGLES);
+                glColor3f(0.1f, 0.2f, 0.3f);
+                glVertex3f(-0.5f, -0.5f, 0);
+                glVertex3f(0.5f, -0.5f, 0);
+                glVertex3f(0, 0.5f, 0);
+                glEnd();
                 Update(deltaTime);
                 SDL_GL_SwapWindow(window);
             }
             Dispose();
         }
 
-        void Render(void) override
+        void Render(void)
         {
-            this->render.Render();
+            this->render->Render();
         }
 
-        void Update(double delta) override 
+        void Update(double delta) 
         {
-            this->render.Update(delta);
+            this->render->Update(delta);
         }
 
-        void Dispose(void) override 
+        void Dispose(void) 
         {
             SDL_DestroyWindow(window);
             SDL_Quit();

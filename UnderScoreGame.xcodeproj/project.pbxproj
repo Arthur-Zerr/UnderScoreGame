@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		5E911DA520C04E5DA3916598 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8C2B999497AF4359B0C575DF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				59A001FC285741F284E5033E /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				5F11FC6E02D0490AAD3AEE18 /* PBXTargetDependency */,
+				34D17828B1A24249BC4A125D /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		ED0A2FDB69DD48F8B0ECB83A /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CB4DCE74DB6B4AFB8BAD1B20 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				398B9B6FBAC14A92855F8928 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1C101A6AA07F4443A81BC153 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Game/Game.hpp */ = {isa = PBXBuildFile; fileRef = 99FE8FD3DE3944709FEC1583 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Game/Game.hpp */; };
+		2213613D88AD4E4087DEC11B /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreHelpers.cpp */ = {isa = PBXBuildFile; fileRef = 903BC6DFD1244F628AD423B5 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreHelpers.cpp */; };
+		494703C815B241AD83A4CC14 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DF4568FEDEED48498DE30BFA /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/CMakeLists.txt */; };
+		4B42CFCB4ED140E083B96D4D /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/main.cpp */ = {isa = PBXBuildFile; fileRef = 7505ABD4168B422D8C0FE4F4 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/main.cpp */; };
+		5C4378C06FB84222A397810F /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreRender.hpp */ = {isa = PBXBuildFile; fileRef = 35FD697FE9AC4729A3310216 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreRender.hpp */; };
+		7660E4FD2C3B4D428A20F550 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/Logger.hpp */ = {isa = PBXBuildFile; fileRef = E5103CFC2C9541FD9D7A6A34 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/Logger.hpp */; };
+		9F6ADCF50F4B4E3BBD314D7D /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/Logger.cpp */ = {isa = PBXBuildFile; fileRef = EC9D316A468143509529AA37 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/Logger.cpp */; };
+		A018050BE56E4F7AAE1F5CC0 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/LoggerTypes.hpp */ = {isa = PBXBuildFile; fileRef = CFDBBDD197284B588C3826C6 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/LoggerTypes.hpp */; };
+		A21F97B2A6484094B0B0BFBD /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Window/SDLWindow.hpp */ = {isa = PBXBuildFile; fileRef = 71BA79A0B4D44E92A80E1ED3 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Window/SDLWindow.hpp */; };
+		B39CCD4E0467485BA845B9BD /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreHelpers.hpp */ = {isa = PBXBuildFile; fileRef = 45B20E2F6A2B4863B17AF673 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreHelpers.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1E5BD9E0FC344EEC839B24AA /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		B88E25EF96374F01BE8FCD38 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		C47F2CA3BEF0465F8C52792D /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		D1DAEF802CBA43DD929AB46A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		92D0521DE8514CEDAE4729C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ADB9EE823014F3A8E1C6B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6186015DA7B49A18637016A;
+			remoteInfo = UnderScoreGame;
+		};
+		C0E0BF3D7E9048FB9B85C8C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ADB9EE823014F3A8E1C6B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED0A2FDB69DD48F8B0ECB83A;
+			remoteInfo = ZERO_CHECK;
+		};
+		FCC757801DE943B7A0B0B631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ADB9EE823014F3A8E1C6B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED0A2FDB69DD48F8B0ECB83A;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35FD697FE9AC4729A3310216 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreRender.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = CoreRender.hpp; path = src/Engine/Core/CoreRender.hpp; sourceTree = SOURCE_ROOT; };
+		45B20E2F6A2B4863B17AF673 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreHelpers.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = CoreHelpers.hpp; path = src/Engine/Core/CoreHelpers.hpp; sourceTree = SOURCE_ROOT; };
+		6802E6D208534308A26738F3 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		71BA79A0B4D44E92A80E1ED3 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Window/SDLWindow.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = SDLWindow.hpp; path = src/Engine/Window/SDLWindow.hpp; sourceTree = SOURCE_ROOT; };
+		7505ABD4168B422D8C0FE4F4 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		903BC6DFD1244F628AD423B5 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreHelpers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CoreHelpers.cpp; path = src/Engine/Core/CoreHelpers.cpp; sourceTree = SOURCE_ROOT; };
+		99FE8FD3DE3944709FEC1583 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Game/Game.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Game.hpp; path = src/Game/Game.hpp; sourceTree = SOURCE_ROOT; };
+		CFDBBDD197284B588C3826C6 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/LoggerTypes.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = LoggerTypes.hpp; path = src/Engine/Logger/LoggerTypes.hpp; sourceTree = SOURCE_ROOT; };
+		DF4568FEDEED48498DE30BFA /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E5103CFC2C9541FD9D7A6A34 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/Logger.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Logger.hpp; path = src/Engine/Logger/Logger.hpp; sourceTree = SOURCE_ROOT; };
+		EC9D316A468143509529AA37 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/Logger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Logger.cpp; path = src/Engine/Logger/Logger.cpp; sourceTree = SOURCE_ROOT; };
+		EEFAD435AC6D49D3B2B4F43B /* UnderScoreGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = UnderScoreGame; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A84CBA475134AF39EADF468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5246D34BA6CC410C95D5DC25 /* UnderScoreGame */ = {
+			isa = PBXGroup;
+			children = (
+				A44CD7D1CAA649FBB5F7AADA /* Source Files */,
+				9752A72235614C6D837AF9EF /* Header Files */,
+				DF4568FEDEED48498DE30BFA /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/CMakeLists.txt */,
+			);
+			name = UnderScoreGame;
+			sourceTree = "<group>";
+		};
+		5B3AB1727E0A43898F69118B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		716452533AA44C5895B470C6 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9752A72235614C6D837AF9EF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				45B20E2F6A2B4863B17AF673 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreHelpers.hpp */,
+				35FD697FE9AC4729A3310216 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreRender.hpp */,
+				E5103CFC2C9541FD9D7A6A34 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/Logger.hpp */,
+				CFDBBDD197284B588C3826C6 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/LoggerTypes.hpp */,
+				71BA79A0B4D44E92A80E1ED3 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Window/SDLWindow.hpp */,
+				99FE8FD3DE3944709FEC1583 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Game/Game.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		A44CD7D1CAA649FBB5F7AADA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7505ABD4168B422D8C0FE4F4 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/main.cpp */,
+				903BC6DFD1244F628AD423B5 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreHelpers.cpp */,
+				EC9D316A468143509529AA37 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/Logger.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		BFEECB8782CC4839B3572043 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				716452533AA44C5895B470C6 /* CMake Rules */,
+				6802E6D208534308A26738F3 /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		D691DAE7A3B14BA7BF27FBC4 = {
+			isa = PBXGroup;
+			children = (
+				5246D34BA6CC410C95D5DC25 /* UnderScoreGame */,
+				BFEECB8782CC4839B3572043 /* ALL_BUILD */,
+				F5EB72CEED8C4366A51967FB /* Products */,
+				5B3AB1727E0A43898F69118B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5EB72CEED8C4366A51967FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEFAD435AC6D49D3B2B4F43B /* UnderScoreGame */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6186015DA7B49A18637016A /* UnderScoreGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C9C5430B064BE3B52AAE14 /* Build configuration list for PBXNativeTarget "UnderScoreGame" */;
+			buildPhases = (
+				E1D92428F90345E9A29743A3 /* Sources */,
+				0A84CBA475134AF39EADF468 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4E2068F58FA407CBBCCFF10 /* PBXTargetDependency */,
+			);
+			name = UnderScoreGame;
+			productName = UnderScoreGame;
+			productReference = EEFAD435AC6D49D3B2B4F43B /* UnderScoreGame */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ADB9EE823014F3A8E1C6B97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1250;
+			};
+			buildConfigurationList = A02E0943F5C24C2DAB4160E7 /* Build configuration list for PBXProject "UnderScoreGame" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				B88E25EF96374F01BE8FCD38 /* Debug */,
+				D1DAEF802CBA43DD929AB46A /* Release */,
+				1E5BD9E0FC344EEC839B24AA /* MinSizeRel */,
+				C47F2CA3BEF0465F8C52792D /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = D691DAE7A3B14BA7BF27FBC4;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				5E911DA520C04E5DA3916598 /* ALL_BUILD */,
+				E6186015DA7B49A18637016A /* UnderScoreGame */,
+				ED0A2FDB69DD48F8B0ECB83A /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		398B9B6FBAC14A92855F8928 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd \"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame\"
+  make -f /Users/arthurzerr/Documents/PKZ\\ Projects/UnderScoreGame/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd \"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame\"
+  make -f /Users/arthurzerr/Documents/PKZ\\ Projects/UnderScoreGame/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd \"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame\"
+  make -f /Users/arthurzerr/Documents/PKZ\\ Projects/UnderScoreGame/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd \"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame\"
+  make -f /Users/arthurzerr/Documents/PKZ\\ Projects/UnderScoreGame/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		59A001FC285741F284E5033E /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd \"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame\"
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd \"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame\"
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd \"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame\"
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd \"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame\"
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		D72B7CBA27AA40BDBD19C3FB = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E016E6C828354BB9BC0FF42C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1D92428F90345E9A29743A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B42CFCB4ED140E083B96D4D /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/main.cpp */,
+				2213613D88AD4E4087DEC11B /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Core/CoreHelpers.cpp */,
+				9F6ADCF50F4B4E3BBD314D7D /* /Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/src/Engine/Logger/Logger.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34D17828B1A24249BC4A125D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED0A2FDB69DD48F8B0ECB83A /* ZERO_CHECK */;
+			targetProxy = C0E0BF3D7E9048FB9B85C8C2 /* PBXContainerItemProxy */;
+		};
+		5F11FC6E02D0490AAD3AEE18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6186015DA7B49A18637016A /* UnderScoreGame */;
+			targetProxy = 92D0521DE8514CEDAE4729C1 /* PBXContainerItemProxy */;
+		};
+		F4E2068F58FA407CBBCCFF10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED0A2FDB69DD48F8B0ECB83A /* ZERO_CHECK */;
+			targetProxy = FCC757801DE943B7A0B0B631 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03BBCAAEEA4844D68E75D456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		062841DD1B9443BBAFC1416B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		09B63981C537449A980AF831 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2F65D1E956F44F538FB98DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		53C868B3C8FE450584FF5EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/build";
+			};
+			name = Release;
+		};
+		5D03DECC65184540BE465F1E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/build";
+			};
+			name = MinSizeRel;
+		};
+		625202A0F6F74557B9D489E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/thirdparty/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks","-framework OpenGL","-L/usr/local/Cellar/sdl2/2.0.14_1/lib  -lSDL2");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UnderScoreGame;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6EBBBA577B7D49E1936D866B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		724D835675254F608DFA7DB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9885A89478894CB094D3E701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A4EC8F040F61447DBA2EBDC2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/thirdparty/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks","-framework OpenGL","-L/usr/local/Cellar/sdl2/2.0.14_1/lib  -lSDL2");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UnderScoreGame;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BC7313FDB9354E7ABA1907EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/thirdparty/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks","-framework OpenGL","-L/usr/local/Cellar/sdl2/2.0.14_1/lib  -lSDL2");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UnderScoreGame;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C07CA19266FE45FB9C4DD0CD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/thirdparty/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks","-framework OpenGL","-L/usr/local/Cellar/sdl2/2.0.14_1/lib  -lSDL2");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UnderScoreGame;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E0ED0897FFFB4895BB3D9403 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F0EA881A630140B8B64EA9F5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/build";
+			};
+			name = RelWithDebInfo;
+		};
+		FCB2804557B44E70A187A83C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = "/Users/arthurzerr/Documents/PKZ Projects/UnderScoreGame/build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C2B999497AF4359B0C575DF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F65D1E956F44F538FB98DF1 /* Debug */,
+				03BBCAAEEA4844D68E75D456 /* Release */,
+				6EBBBA577B7D49E1936D866B /* MinSizeRel */,
+				E0ED0897FFFB4895BB3D9403 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A02E0943F5C24C2DAB4160E7 /* Build configuration list for PBXProject "UnderScoreGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCB2804557B44E70A187A83C /* Debug */,
+				53C868B3C8FE450584FF5EA4 /* Release */,
+				5D03DECC65184540BE465F1E /* MinSizeRel */,
+				F0EA881A630140B8B64EA9F5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4C9C5430B064BE3B52AAE14 /* Build configuration list for PBXNativeTarget "UnderScoreGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625202A0F6F74557B9D489E0 /* Debug */,
+				BC7313FDB9354E7ABA1907EB /* Release */,
+				A4EC8F040F61447DBA2EBDC2 /* MinSizeRel */,
+				C07CA19266FE45FB9C4DD0CD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CB4DCE74DB6B4AFB8BAD1B20 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9885A89478894CB094D3E701 /* Debug */,
+				724D835675254F608DFA7DB4 /* Release */,
+				09B63981C537449A980AF831 /* MinSizeRel */,
+				062841DD1B9443BBAFC1416B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6ADB9EE823014F3A8E1C6B97 /* Project object */;
+}

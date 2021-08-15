@@ -2,20 +2,21 @@
 #include <SDL2/SDL_opengl.h>
 
 #include "../Engine/Core/CoreRender.hpp"
+#include "../Engine/Logger/Logger.hpp"
 
 namespace UnderScore::Game 
 {
-    class Game : UnderScore::Engine::Core::CoreRender
+    class Game : public UnderScore::Engine::Core::CoreRender
     {
         void Init() override 
         {
-
+            UnderScore::Engine::Logger::Logger::GetInstance().logInfo("Init Game Renderer");
+            std::cout << "Init Game Renderer" << std::endl;;
         }
 
         void Render() override 
         {
-            std::cout << "Game Render Function" << std::endl;
-            glClearColor(1.f, 1.f, 1.f, 0.f);
+            glClearColor(0.f, 1.f, 0.f, 1.f);
             glClear(GL_COLOR_BUFFER_BIT);
 
             glBegin(GL_TRIANGLES);

@@ -6,9 +6,9 @@ namespace UnderScore::Engine::Core
     class CoreRender 
     {
         public:
-        virtual void Init(){};
-        virtual void Render(){};
-        virtual void Update(double delta){};
+        virtual void Init() {};
+        virtual void Render() {};
+        virtual void Update(double delta) {};
     };
 }
 

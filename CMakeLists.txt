@@ -18,11 +18,8 @@ if (WIN32)
   endif ()
 endif (WIN32)
 
-if (UNIX)
-  find_package(glfw3 3.3 REQUIRED)
-endif (UNIX)
-
 find_package(OpenGL REQUIRED)
+find_package(SDL2 REQUIRED)
 
 file(GLOB_RECURSE SOURCE_FILES 
 	${CMAKE_SOURCE_DIR}/src/*.cpp)
@@ -33,7 +30,6 @@ file(GLOB_RECURSE HEADER_FILES
 
 # add the executable
 add_executable(UnderScoreGame main.cpp ${HEADER_FILES} ${SOURCE_FILES})
-
 
 #target_include_directories(UnderScoreGame PUBLIC "${CMAKE_CURRENT_LIST_DIR}/thirdparty/include")
 
@@ -49,16 +45,16 @@ if (WIN32)
   add_custom_command(TARGET UnderScoreGame POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_if_different ${DLLS} ${CMAKE_CURRENT_BINARY_DIR}) 
 endif (WIN32)
 
-
 target_link_libraries(UnderScoreGame OpenGL::GL)
 
-# MACOS uses GLFW
+target_include_directories(UnderScoreGame PUBLIC ${INCLUDE_DIR})
+
+# MACOS
 if (UNIX)
-  target_link_libraries(UnderScoreGame glfw)
+  message("${SDL2_LIBRARIES}")
+  target_link_libraries(UnderScoreGame ${SDL2_LIBRARIES})
 endif (UNIX)
 
-
 if (WIN32)
-  target_include_directories(UnderScoreGame PUBLIC ${INCLUDE_DIR})
   target_link_libraries(UnderScoreGame ${LIBRARY})
 endif (WIN32)
