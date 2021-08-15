@@ -37,15 +37,12 @@ namespace UnderScore::Engine::Window
 
             Uint32 windowFlags = SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE; //TODO load this from File
 
-            SDL_Window* window = SDL_CreateWindow(TITLE, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, windowFlags);
+            window = SDL_CreateWindow(TITLE, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, windowFlags);
             if (window == NULL) {
                 UnderScore::Engine::Logger::Logger::GetInstance().logError("Could not create SDL window.");
                 throw; //TODO: Fix that
             }
             SDL_GL_SetSwapInterval(1);  
-
-
-
             glContext = SDL_GL_CreateContext(window);
         }
 
@@ -80,15 +77,8 @@ namespace UnderScore::Engine::Window
                             break;
                     }
                 }
-                glClearColor(0.f, 1.f, 0.f, 1.f);
-                glClear(GL_COLOR_BUFFER_BIT);
-
-                glBegin(GL_TRIANGLES);
-                glColor3f(0.1f, 0.2f, 0.3f);
-                glVertex3f(-0.5f, -0.5f, 0);
-                glVertex3f(0.5f, -0.5f, 0);
-                glVertex3f(0, 0.5f, 0);
-                glEnd();
+                glViewport(0, 0, WIDTH, HEIGHT);
+                Render();
                 Update(deltaTime);
                 SDL_GL_SwapWindow(window);
             }

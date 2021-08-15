@@ -16,3 +16,27 @@
 15_08_21 12:58:31 Debug: Using SDL
 15_08_21 12:58:33 Info: Init Game Renderer
 15_08_21 12:58:33 Debug: Init Renderer
+15_08_21 19:10:10 Debug: Using SDL
+15_08_21 19:10:10 Debug: Init Renderer
+15_08_21 19:10:10 Info: Init Game Renderer
+15_08_21 19:12:51 Debug: Using SDL
+15_08_21 19:12:52 Debug: Init Renderer
+15_08_21 19:12:52 Info: Init Game Renderer
+15_08_21 19:13:21 Debug: Using SDL
+15_08_21 19:13:21 Info: Init Game Renderer
+15_08_21 19:13:21 Debug: Init Renderer
+15_08_21 19:14:09 Debug: Using SDL
+15_08_21 19:14:09 Debug: Init Renderer
+15_08_21 19:14:09 Info: Init Game Renderer
+15_08_21 19:15:13 Debug: Using SDL
+15_08_21 19:15:14 Info: Init Game Renderer
+15_08_21 19:15:14 Debug: Init Renderer
+15_08_21 19:15:49 Debug: Using SDL
+15_08_21 19:15:49 Info: Init Game Renderer
+15_08_21 19:15:49 Debug: Init Renderer
+15_08_21 19:16:08 Debug: Using SDL
+15_08_21 19:16:08 Debug: Init Renderer
+15_08_21 19:16:08 Info: Init Game Renderer
+15_08_21 19:16:41 Debug: Using SDL
+15_08_21 19:16:41 Info: Init Game Renderer
+15_08_21 19:16:41 Debug: Init Renderer
